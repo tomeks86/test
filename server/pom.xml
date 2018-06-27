@@ -15,6 +15,11 @@
         <jacoco.version>0.8.1</jacoco.version>
         <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
         <findbugs-maven-plugin.version>3.0.5</findbugs-maven-plugin.version>
+<<<<<<< 453f7352654f6fc5b157ec807a6f555046873def
+=======
+        <log4j.version>1.2.17</log4j.version>
+        <client.version>0.0.1</client.version>
+>>>>>>> initial configuration
     </properties>
 
     <modelVersion>4.0.0</modelVersion>
@@ -27,7 +32,11 @@
 
     <groupId>com.battleships</groupId>
     <artifactId>server</artifactId>
+<<<<<<< 453f7352654f6fc5b157ec807a6f555046873def
     <version>0.0.1</version>
+=======
+    <version>${client.version}</version>
+>>>>>>> initial configuration
     <name>Battleship game server</name>
     <description>Battleship game in Java</description>
     <url>https://github.com/JavaAcademyDoktorki/battleships</url>
@@ -39,6 +48,14 @@
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
+<<<<<<< 453f7352654f6fc5b157ec807a6f555046873def
+=======
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+>>>>>>> initial configuration
     </dependencies>
 
     <build>
@@ -95,7 +112,7 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>0.65</minimum>
+                                            <minimum>0.60</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -119,7 +136,10 @@
                     </execution>
                 </executions>
             </plugin>
+<<<<<<< 453f7352654f6fc5b157ec807a6f555046873def
 
+=======
+>>>>>>> initial configuration
         </plugins>
     </build>
 
